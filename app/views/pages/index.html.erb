@@ -1,0 +1,77 @@
+<h1>Pages#index</h1>
+<p>Find me in app/views/pages/index.html.erb</p>
+<input type="text" value="100" class="red">
+<input type="text" value="100" class="green">
+<input type="text" value="100" class="blue">
+<p id="numero"></p>
+
+  <div class="row">
+    <div class="col-md-6" style="width: 200px; height: 200px; background-color: red;">
+
+    </div>
+
+  </div>
+
+<script type="text/javascript">
+$(function(){
+  $(".dial")
+
+})
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+mycamach/clase47
+
+
+
+  <script>
+  $(function(){
+      var rojo = $(".red").val(),
+  });
+
+  $(".red").knob({
+    'min':0,
+    'max':255,
+      'release' : function (v) {
+
+        a.innerHTML = '';
+
+        console.log(v);
+      }
+  });
+
+
+
+  var a = document.getElementById("numero");
+
+
+
+      $(".red").knob({
+          'change' : function (v) {
+            a.innerHTML = '';
+
+            console.log(v);
+          }
+      });
+      $(".green").knob({
+          'change' : function (v) { console.log(v); }
+      });
+
+      $(".blue").knob({
+          'change' : function (v) { console.log(v); }
+      });
+      a.innerHTML = 'algo';
+      console.log(a)
+
+      // $("#numero").innerHTML = "algo";
+  </script>
